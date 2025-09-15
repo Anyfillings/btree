@@ -1,0 +1,220 @@
+20:26:06: Executing ':org.example.BenchmarkRunner.main()'...
+
+Starting Gradle Daemon...
+Gradle Daemon started in 565 ms
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :org.example.BenchmarkRunner.main()
+# JMH version: 1.37
+# VM version: JDK 23, OpenJDK 64-Bit Server VM, 23+37-2369
+# VM invoker: /Users/andrei/Library/Java/JavaVirtualMachines/openjdk-23/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.BTreeInsertBenchmark.insertRandom
+# Parameters: (preload = 10000, t = 3)
+
+# Run progress: 0,00% complete, ETA 00:08:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,314 us/op
+# Warmup Iteration   2: 0,191 us/op
+# Warmup Iteration   3: 0,172 us/op
+Iteration   1: 0,169 us/op
+Iteration   2: 0,169 us/op
+Iteration   3: 0,168 us/op
+Iteration   4: 0,166 us/op
+Iteration   5: 0,174 us/op
+
+
+Result "org.example.BTreeInsertBenchmark.insertRandom":
+  0,169 ±(99.9%) 0,012 us/op [Average]
+  (min, avg, max) = (0,166, 0,169, 0,174), stdev = 0,003
+  CI (99.9%): [0,157, 0,181] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 23, OpenJDK 64-Bit Server VM, 23+37-2369
+# VM invoker: /Users/andrei/Library/Java/JavaVirtualMachines/openjdk-23/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.BTreeInsertBenchmark.insertRandom
+# Parameters: (preload = 10000, t = 8)
+
+# Run progress: 16,67% complete, ETA 00:06:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,210 us/op
+# Warmup Iteration   2: 0,131 us/op
+# Warmup Iteration   3: 0,131 us/op
+Iteration   1: 0,129 us/op
+Iteration   2: 0,129 us/op
+Iteration   3: 0,160 us/op
+Iteration   4: 0,166 us/op
+Iteration   5: 0,163 us/op
+
+
+Result "org.example.BTreeInsertBenchmark.insertRandom":
+  0,149 ±(99.9%) 0,073 us/op [Average]
+  (min, avg, max) = (0,129, 0,149, 0,166), stdev = 0,019
+  CI (99.9%): [0,077, 0,222] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 23, OpenJDK 64-Bit Server VM, 23+37-2369
+# VM invoker: /Users/andrei/Library/Java/JavaVirtualMachines/openjdk-23/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.BTreeSearchBenchmark.searchHit
+# Parameters: (n = 10000)
+
+# Run progress: 33,33% complete, ETA 00:05:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 132,173 ns/op
+# Warmup Iteration   2: 132,492 ns/op
+# Warmup Iteration   3: 132,137 ns/op
+Iteration   1: 131,539 ns/op
+Iteration   2: 132,685 ns/op
+Iteration   3: 131,996 ns/op
+Iteration   4: 131,763 ns/op
+Iteration   5: 132,331 ns/op
+
+
+Result "org.example.BTreeSearchBenchmark.searchHit":
+  132,063 ±(99.9%) 1,751 ns/op [Average]
+  (min, avg, max) = (131,539, 132,063, 132,685), stdev = 0,455
+  CI (99.9%): [130,311, 133,814] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 23, OpenJDK 64-Bit Server VM, 23+37-2369
+# VM invoker: /Users/andrei/Library/Java/JavaVirtualMachines/openjdk-23/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.BTreeSearchBenchmark.searchHit
+# Parameters: (n = 100000)
+
+# Run progress: 50,00% complete, ETA 00:04:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 208,135 ns/op
+# Warmup Iteration   2: 207,789 ns/op
+# Warmup Iteration   3: 204,964 ns/op
+Iteration   1: 204,197 ns/op
+Iteration   2: 205,081 ns/op
+Iteration   3: 204,674 ns/op
+Iteration   4: 206,011 ns/op
+Iteration   5: 204,912 ns/op
+
+
+Result "org.example.BTreeSearchBenchmark.searchHit":
+  204,975 ±(99.9%) 2,572 ns/op [Average]
+  (min, avg, max) = (204,197, 204,975, 206,011), stdev = 0,668
+  CI (99.9%): [202,402, 207,547] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 23, OpenJDK 64-Bit Server VM, 23+37-2369
+# VM invoker: /Users/andrei/Library/Java/JavaVirtualMachines/openjdk-23/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.BTreeSearchBenchmark.searchMiss
+# Parameters: (n = 10000)
+
+# Run progress: 66,67% complete, ETA 00:02:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 35,448 ns/op
+# Warmup Iteration   2: 35,277 ns/op
+# Warmup Iteration   3: 35,670 ns/op
+Iteration   1: 35,612 ns/op
+Iteration   2: 35,599 ns/op
+Iteration   3: 35,609 ns/op
+Iteration   4: 35,586 ns/op
+Iteration   5: 35,618 ns/op
+
+
+Result "org.example.BTreeSearchBenchmark.searchMiss":
+  35,605 ±(99.9%) 0,048 ns/op [Average]
+  (min, avg, max) = (35,586, 35,605, 35,618), stdev = 0,012
+  CI (99.9%): [35,557, 35,653] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 23, OpenJDK 64-Bit Server VM, 23+37-2369
+# VM invoker: /Users/andrei/Library/Java/JavaVirtualMachines/openjdk-23/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.BTreeSearchBenchmark.searchMiss
+# Parameters: (n = 100000)
+
+# Run progress: 83,33% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 47,033 ns/op
+# Warmup Iteration   2: 46,634 ns/op
+# Warmup Iteration   3: 46,608 ns/op
+Iteration   1: 46,594 ns/op
+Iteration   2: 46,790 ns/op
+Iteration   3: 46,596 ns/op
+Iteration   4: 46,594 ns/op
+Iteration   5: 46,673 ns/op
+
+
+Result "org.example.BTreeSearchBenchmark.searchMiss":
+  46,649 ±(99.9%) 0,331 ns/op [Average]
+  (min, avg, max) = (46,594, 46,649, 46,790), stdev = 0,086
+  CI (99.9%): [46,319, 46,980] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:08:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                             (n)  (preload)  (t)  Mode  Cnt    Score   Error  Units
+BTreeInsertBenchmark.insertRandom     N/A      10000    3  avgt    5    0,169 ± 0,012  us/op
+BTreeInsertBenchmark.insertRandom     N/A      10000    8  avgt    5    0,149 ± 0,073  us/op
+BTreeSearchBenchmark.searchHit      10000        N/A  N/A  avgt    5  132,063 ± 1,751  ns/op
+BTreeSearchBenchmark.searchHit     100000        N/A  N/A  avgt    5  204,975 ± 2,572  ns/op
+BTreeSearchBenchmark.searchMiss     10000        N/A  N/A  avgt    5   35,605 ± 0,048  ns/op
+BTreeSearchBenchmark.searchMiss    100000        N/A  N/A  avgt    5   46,649 ± 0,331  ns/op
+
+BUILD SUCCESSFUL in 8m 4s
+2 actionable tasks: 1 executed, 1 up-to-date
+20:34:11: Execution finished ':org.example.BenchmarkRunner.main()'.
